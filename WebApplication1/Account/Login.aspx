@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WebApplication1.Account.Login" %>
 
+<%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -58,7 +60,11 @@
                     --%>
                 </p>
             </div>
-
+             <div class="col-md-4">
+            <section id="socialLoginForm">
+                <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
+            </section>
+        </div>
     </div>
 
 
