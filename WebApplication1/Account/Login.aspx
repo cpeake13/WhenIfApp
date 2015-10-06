@@ -10,6 +10,7 @@
     <link href="../Resources/CSS/site-collection.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <h1> howdy doo!</h1>
     <form id="form1" runat="server">
     <div id="body-container" class="auth-form">
         <div id="left">
